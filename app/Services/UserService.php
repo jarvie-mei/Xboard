@@ -25,7 +25,7 @@ class UserService
         if ((int) $day >= (int) $today && (int) $day >= (int) $lastDay) {
             return $lastDay - $today;
         }
-        if ((int) $day >= (int) $today) {
+        if ((int) $day > (int) $today) {
             return $day - $today;
         }
 
