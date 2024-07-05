@@ -5,7 +5,7 @@ set -eu
 cat > /www/.env <<-EOF
 APP_NAME=${APP_NAME:-XBoard}}
 APP_ENV=local
-APP_KEY=${APP_KEY:-base64:k9njZYlyNBs9H9PDOynn8s/P+ct9jGDr67/dpt3Pu+4=}
+APP_KEY=${APP_KEY:-base64:PZXk5vTuTinfeEVG5FpYv2l6WEhLsyvGpiWK7IgJJ60=}
 APP_DEBUG=${APP_DEBUG:-false}
 APP_URL=${APP_URL:-http://localhost}
 
