@@ -14,8 +14,4 @@ RUN composer install --optimize-autoloader --no-cache --no-dev \
 && chown -R www:www /www \
 && chmod -R 775 /www
 
-COPY --chmod=0655 entrypoint.sh /entrypoint.sh
-
-ENTRYPOINT ["/entrypoint.sh"]
-
-CMD []
+CMD  /usr/bin/supervisord --nodaemon -c /etc/supervisor/supervisord.conf
